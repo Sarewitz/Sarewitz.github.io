@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>第一周web</title>
+    <title>第一周web 爆破专家</title>
     <link href="/2023/01/14/%E7%AC%AC%E4%B8%80%E5%91%A8web/"/>
     <url>/2023/01/14/%E7%AC%AC%E4%B8%80%E5%91%A8web/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<p>输入账号:admin ，密码:000，返回“密码错误”</p><p>可以通过抓包，对密码进行爆破<br>利用burpsuite对其抓包 （ಥ_ಥ 这个东西下载好了好长时间qwq） </p><p>账号是admin已经确定了，只需要对密码进行爆破</p><p>接下来就需要爆破字典了，题目中说“纯数字且不超过四位数”<br>可以简单写一个程序<br>#include&lt;stdio.h&gt;<br>int main()<br>{<br>    int a=0;<br>    for(int i=1;i&lt;9999;i++){<br>        a=i;<br>        printf(“%d\n”,a);<br>    }<br>    return 0;<br>}</p><p>接着在爆破的返回值中，找到返回长度不一样的就是密码了</p>]]></content>
     
     
     
