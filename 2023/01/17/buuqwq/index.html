@@ -15,28 +15,39 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="John Doe">
+  <meta name="author" content="Sarewitz">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Sarewitz的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sarewitz&#39;s Blog">
-<meta property="og:url" content="http://sarewitz.github.io/index.html">
+    <meta name="description" content="Do you want to ‘Brush’ the questions wiht me ???">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BUUCTF">
+<meta property="og:url" content="http://sarewitz.github.io/2023/01/17/buuqwq/index.html">
 <meta property="og:site_name" content="Sarewitz&#39;s Blog">
-<meta property="og:description" content="Sarewitz的博客">
+<meta property="og:description" content="Do you want to ‘Brush’ the questions wiht me ???">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://sarewitz.github.io/images/BUU.jpg">
+<meta property="article:published_time" content="2023-01-17T11:09:33.000Z">
+<meta property="article:modified_time" content="2023-01-17T11:17:23.684Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Buu">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://sarewitz.github.io/images/BUU.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Sarewitz&#39;s Blog</title>
+  <title>BUUCTF - Sarewitz&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -107,7 +118,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 100vh;">
+<div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -265,17 +276,60 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="一起学习，一起进步"></span>
+            <span id="subtitle" data-typed-text="BUUCTF"></span>
           
         </div>
 
         
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        Sarewitz
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-01-17 19:09" pubdate>
+           2023 年 01 月 17 日 , 晚上 07:09 , 星期二
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          <!-- compatible with older versions-->
+          861 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          <!-- compatible with older versions-->
+          8 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
       </div>
 
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
       
     </div>
   </div>
@@ -287,273 +341,202 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board"
-          style="margin-top: 0">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">BUUCTF</h1>
+            
+            
+              <div class="markdown-body">
                 
+                <p>Do you want to ‘Brush’ the questions wiht me ???</p>
+<span id="more"></span>
+<h2 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h2><h3 id="EasySQL"><a href="#EasySQL" class="headerlink" title="EasySQL"></a>EasySQL</h3><h5 id="SQL？？？"><a href="#SQL？？？" class="headerlink" title="SQL？？？"></a>SQL？？？</h5><p>  首先，SQL注入是什么？？？<br>  我们都知道web分为前端和后端，前端负责进行展示，后端负责处理来自前端的请求并提供前端展示的资源，即然有资源，那么就需要有存储资源的地方——如mysql数据库。<br>那服务器如何对数据获取了？就需要使用SQL语句这一语法结构进行查询获取。SQL语句通过特有的语法对数据进行查询<br>不同的注入会有不同的结果（对数据的输入没有很好的过滤，输入1和输入1‘的结果不同）<br>  常见的参数类型：<br>  1.数字型  如:  <a target="_blank" rel="noopener" href="http://www.text.com/text.php?id=3">www.text.com/text.php?id=3</a> 对应的sql语句为 select * from table where id=3<br>  2.字符型 如： select * from table where name=’admin’</p>
+<h4 id="解题"><a href="#解题" class="headerlink" title="解题"></a>解题</h4><img src="/2023/01/17/buuqwq/001.jpg" srcset="/img/loading.gif" lazyload class title="ok">
+<p>先输入 “admin”和”123”, 返回用户名和密码错误<br>使用这个万能钥匙试一试</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-comment"># 万能公式</span><br><span class="hljs-attribute">1</span> and <span class="hljs-number">1</span>=<span class="hljs-number">1</span><br><span class="hljs-attribute">1</span>&#x27; and &#x27;<span class="hljs-number">1</span>&#x27;=&#x27;<span class="hljs-number">1</span><br><span class="hljs-attribute">1</span> or <span class="hljs-number">1</span>=<span class="hljs-number">1</span> <br><span class="hljs-attribute">1</span>&#x27; or &#x27;<span class="hljs-number">1</span>&#x27;=&#x27;<span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
+<p>前三个都正常报错，最后一个登录成功<br>为社么and不行呢？？？</p>
+<p> ```<br>网页URL: /?username=1%27and%271%27%3D%271&amp;password=1%27and%271%27%3D%271<br>SELECT * FROM tables WHERE username=’1’ or ‘1’=’1’ and password=’1’ or ‘1’=’1’<br>优先级排序：and 优先级高于 or，所以要计算 and 然后再计算 or<br>username=’1’—&gt;false<br>‘1’=’1’—&gt; true<br>passwrod=’1’—&gt;false<br>‘1’=’1’—&gt;true<br>false or (true and false) or true<br>false or false or true<br>false or true<br>#得出结果：true<br>也就是利用了and和or优先级的特点，返回结果为true，即可</p>
 
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/01/17/buuqwq/" target="_self">
-          <img src="/images/BUU.jpg" srcset="/img/loading.gif" lazyload alt="BUUCTF">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2023/01/17/buuqwq/" target="_self">
-          BUUCTF
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2023/01/17/buuqwq/" target="_self">
-        <div>
-          Do you want to ‘Brush’ the questions wiht me ???
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-01-17 19:09" pubdate>
-              2023-01-17
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Buu/">#Buu</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/01/15/%E7%AC%AC%E4%B8%80%E5%91%A8web2/" target="_self">
-          <img src="/images/003.jpg" srcset="/img/loading.gif" lazyload alt="第一周web 无数字字母绕过">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2023/01/15/%E7%AC%AC%E4%B8%80%E5%91%A8web2/" target="_self">
-          第一周web 无数字字母绕过
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2023/01/15/%E7%AC%AC%E4%B8%80%E5%91%A8web2/" target="_self">
-        <div>
-          无数字字母绕过
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-01-15 00:52" pubdate>
-              2023-01-15
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%97%A0%E6%95%B0%E5%AD%97%E5%AD%97%E6%AF%8D%E7%BB%95%E8%BF%87/">#无数字字母绕过</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/01/14/%E7%AC%AC%E4%B8%80%E5%91%A8web/" target="_self">
-          <img src="/images/%E7%AC%AC%E4%B8%80%E5%91%A8004.png" srcset="/img/loading.gif" lazyload alt="第一周web 爆破专家">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2023/01/14/%E7%AC%AC%E4%B8%80%E5%91%A8web/" target="_self">
-          第一周web 爆破专家
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2023/01/14/%E7%AC%AC%E4%B8%80%E5%91%A8web/" target="_self">
-        <div>
-          ##爆破专家
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-01-14 21:17" pubdate>
-              2023-01-14
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/01/14/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%AF%95%E9%AA%8C/" target="_self">
-          <img src="/images/002.jpg" srcset="/img/loading.gif" lazyload alt="第二次试验">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2023/01/14/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%AF%95%E9%AA%8C/" target="_self">
-          第二次试验
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2023/01/14/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%AF%95%E9%AA%8C/" target="_self">
-        <div>
-          查看图片
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-01-14 18:15" pubdate>
-              2023-01-14
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/01/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
-          <img src="/images/%E5%88%9D%E9%9F%B3.jpg" srcset="/img/loading.gif" lazyload alt="我的第一篇博客">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2023/01/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
-          我的第一篇博客
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2023/01/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
-        <div>
-          简介ok这是我的第一篇’HEXO‘博客文章。 okk
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-01-14 16:12" pubdate>
-              2023-01-14
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/2023/01/08/hello-world/" target="_self">
-          <img src="/images/%E6%B5%B7%E7%BB%B5%E5%AE%9D%E8%B4%9D.jpg" srcset="/img/loading.gif" lazyload alt="Hello World">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2023/01/08/hello-world/" target="_self">
-          Hello World
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt " href="/2023/01/08/hello-world/" target="_self">
-        <div>
-          Hello
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-01-08 18:47" pubdate>
-              2023-01-08
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-
-
-
-
+                
               </div>
-            </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Buu/">#Buu</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>BUUCTF</div>
+      <div>http://sarewitz.github.io/2023/01/17/buuqwq/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Sarewitz</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年1月17日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
           </div>
         </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/01/15/%E7%AC%AC%E4%B8%80%E5%91%A8web2/" title="第一周web 无数字字母绕过">
+                        <span class="hidden-mobile">第一周web 无数字字母绕过</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"你的appId","appKey":"你的appKey","path":"window.location.pathname","placeholder":"留言仅限讨论，禁止广告等行为","avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"你的serverURLs","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
       </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
     
 
     
@@ -671,6 +654,99 @@
 
 
 
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
 
